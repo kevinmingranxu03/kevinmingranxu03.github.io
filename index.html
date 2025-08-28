@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>Mingran Xu - Resume</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+      background: #f9fafb;
+      color: #333;
+    }
+    .container {
+      display: flex;
+      min-height: 100vh;
+    }
+    /* 左边栏 */
+    .sidebar {
+      width: 260px;
+      background: #e0f2fe; /* 浅蓝色 */
+      color: #1e293b; /* 深色文字 */
+      padding: 30px 20px;
+      box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+    }
+    .sidebar img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto 15px;
+      border: 3px solid #1e293b;
+    }
+    .sidebar h2 {
+      text-align: center;
+      margin: 10px 0 5px;
+      font-size: 1.4rem;
+      color: #1e293b;
+    }
+    .sidebar p {
+      text-align: center;
+      margin: 0 0 20px;
+      font-size: 0.95rem;
+      color: #334155;
+    }
+    .menu {
+      list-style: none;
+      padding: 0;
+    }
+    .menu li {
+      margin: 15px 0;
+      text-align: center;
+    }
+    .menu a {
+      text-decoration: none;
+      color: #1e293b;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .menu a:hover {
+      color: #0369a1;
+    }
+    /* 主体内容 */
+    .main {
+      flex: 1;
+      padding: 40px;
+    }
+    .profile {
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+    .profile h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: #1e293b;
+    }
+    .profile p {
+      margin: 6px 0;
+      font-size: 1rem;
+      color: #555;
+    }
+    h2 {
+      color: #1e293b;
+      margin-top: 30px;
+    }
+    ul {
+      line-height: 1.8;
+    }
+    .download-btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #bae6fd; /* 浅蓝色按钮 */
+      color: #1e293b; /* 深色字体 */
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .download-btn:hover {
+      background: #7dd3fc; /* hover 稍深 */
+    }
+  </style>
+
+</head>
+<body>
+  <div class="container">
+    <!-- 左边栏 -->
+    <div class="sidebar">
+      <img src="me.jpg" alt="my photo">
+      <h2>Mingran Xu</h2>
+      <p>University of Washington</p>
+      <ul class="menu">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Course Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+      </ul>
+    </div>
+
+    <!-- 主体内容 -->
+    <div class="main">
+      <!-- 个人信息卡片 -->
+      <div class="profile">
+        <h1>Mingran Xu</h1>
+        <p>🎓 University of Washington</p>
+        <p>💻 Computer Science</p>
+        <p>💻 Applied and Mathematical Science - Discrete Math and Algorithm</p>
+        <p>📧 mingrx3@uw.edu</p>
+      </div>
+
+      <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, my name is Mingran Xu. I am a senior student, currently 
+            double majoring in Computer Science and ACMS-DMA at the University 
+            of Washington, specializing in software development with additional 
+            knowledge in machine learning. My main interests lie in backend development 
+            and large language models.</p>
+      </section>
+
+      <section id="projects">
+        <h2>Course Projects</h2>
+        <ul>
+          <li><strong>Software Design and Implementation</strong> — <a href="https://github.com/kevinmingranxu03/squares.git">View Project</a></li>
+          <li><strong>Data Structures and Parallelism</strong> — <a href="https://github.com/kevinmingranxu03/umessage.git">View Project</a></li>
+          <li><strong>Multithreaded Web Server</strong> — <a href="https://github.com/kevinmingranxu03/Multithreaded-Web-Server.git">View Project</a></li>
+        </ul>
+      </section>
+
+      <section id="resume">
+        <h2>Resume Download</h2>
+        <a href="Resume.pdf" class="download-btn" download>📄 Download My Resume</a>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
